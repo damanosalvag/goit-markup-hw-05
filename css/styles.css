@@ -22,9 +22,11 @@ body {
 header {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     border-bottom: 1px solid #ECECEC;
     padding: 32px var(--padding-main-header);
+    gap: 20px;
 }
 footer {
     padding-top: 60px;
@@ -32,7 +34,7 @@ footer {
 }
 header nav {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     gap: 97px;
 }
@@ -119,10 +121,11 @@ li {
     position: relative;
     padding: 200px var(--padding-main-header);
     text-align: center;
-    background-size: cover;
+    margin: auto;
     background-position: center;
     background-repeat: no-repeat;
     background-image: url(../images/bg-image.jpg);
+    max-width: 1600px;
 }
 .overlay {
     position: absolute;
@@ -144,7 +147,7 @@ h1 {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
-    width: 700px;
+    max-width: 700px;
     margin: 20px auto;
     position: relative;
     z-index: 5;
@@ -183,6 +186,7 @@ button {
 .main-features .features {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     gap: 30px;
 }
 .features > li {
@@ -227,7 +231,9 @@ h2 {
 
 .cg-items {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 .cg-items > li {
     position: relative;
@@ -262,7 +268,9 @@ h2 {
 }
 .ct-ctiner-staff {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 .staff > figcaption {
     font-weight: 400;
@@ -312,7 +320,8 @@ h2 {
 /* Clientes regulares */
 .ct__customers__logo {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     gap: 30px;
 }
@@ -351,7 +360,6 @@ address > a {
 
 .item {
     width: 370px;
-    height: 404px;
     border-bottom: 1px solid #EEEEEE;
 }
 .item:hover, .item:focus {
