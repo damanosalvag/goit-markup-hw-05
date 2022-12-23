@@ -49,9 +49,18 @@
         <!--Lista de menu-->
     </header>
     <main>
+        <section class="backdrop is-hidden" data-modal>
+            <div class="backdrop__modal">
+                <a class="bm__close-icon" data-modal-close>
+                    <svg class="close-icon__svg" width="30" height="30" fill="none">
+                        <use href="./images/svg/icons.svg#close_icon"></use>
+                    </svg>
+                </a>
+            </div>
+        </section>
         <figure class="main-header">
             <h1>soluciones eficaces para su negocio</h1>
-            <button class="btn-blue" type="button">Solicite nuestro servicio</button>
+            <button class="btn-blue" type="button" data-modal-open>Solicite nuestro servicio</button>
             <div class="overlay"></div>
         </figure>
         <!--Seccion de caracteristicas de la empresa-->
@@ -107,19 +116,19 @@
                 <h2>A qué nos dedicamos</h2>
                 <ul class="cg-items">
                         <li>
-                            <img src="images/aqnd1.jpg" alt="medium-shot-man-with-coffee-cup" style="width: 380px;">
+                            <img src="images/aqnd1.jpg" alt="medium-shot-man-with-coffee-cup" style="width: 370px;">
                             <div class="cg-items-cover">
                                 aplicaciones de escritorio
                             </div>
                         </li>
                         <li>
-                            <img src="images/aqnd2.jpg" alt="female-hands-typing-on-computer-keyboard" style="width: 380px;">
+                            <img src="images/aqnd2.jpg" alt="female-hands-typing-on-computer-keyboard" style="width: 370px;">
                             <div class="cg-items-cover">
                                 aplicaciones móviles
                             </div>
                         </li>
                         <li>
-                            <img src="images/aqnd3.jpg" alt="businesswoman-holding-cup-of-coffee-analyzing-financial-graphs-typing-marketing-strategy-while-working-at-company-project-in-startup-office-executive-manager-researching-business-solution" style="width: 380px;">
+                            <img src="images/aqnd3.jpg" alt="businesswoman-holding-cup-of-coffee-analyzing-financial-graphs-typing-marketing-strategy-while-working-at-company-project-in-startup-office-executive-manager-researching-business-solution" style="width: 370px;">
                             <div class="cg-items-cover">
                                 soluciones de diseño
                             </div>
@@ -368,5 +377,6 @@
             </div>
         </div>
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
